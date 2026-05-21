@@ -34,7 +34,6 @@ import {
   Leaf,
   Clock,
   Globe,
-  Users,
   Target,
   ArrowRight,
   LayoutGrid
@@ -172,21 +171,22 @@ export default function HomePage() {
       category: lang === 'en' ? 'Moving' : 'Flytning',
       ...t.services.moveout,
       image: 'https://images.pexels.com/photos/4246120/pexels-photo-4246120.jpeg'
-    },
-    {
-      id: 'temporary',
-      slug: 'temporary-staff',
-      icon: Users,
-      category: lang === 'en' ? 'Temporary team' : 'Midlertidigt team',
-      title: lang === 'en' ? 'Temporary Cleaning Staff' : 'Midlertidig Rengøringspersonale',
-      description: lang === 'en' ? 'Professional temporary cleaning workers to support your business during busy periods, staff shortages, or special events.' : 'Professionelle midlertidige rengøringsarbejdere til at støtte din virksomhed i travle perioder, personalemangel eller særlige begivenheder.',
-      features: [
-        lang === 'en' ? 'Vetted professionals' : 'Godkendte fagfolk',
-        lang === 'en' ? 'Fast placement' : 'Hurtig placering',
-        lang === 'en' ? 'Flexible duration' : 'Fleksibel varighed'
-      ],
-      image: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg'
     }
+    // Temporary Cleaning Staff is hidden until the service is ready to launch.
+    // {
+    //   id: 'temporary',
+    //   slug: 'temporary-staff',
+    //   icon: Users,
+    //   category: lang === 'en' ? 'Temporary team' : 'Midlertidigt team',
+    //   title: lang === 'en' ? 'Temporary Cleaning Staff' : 'Midlertidig Rengøringspersonale',
+    //   description: lang === 'en' ? 'Professional temporary cleaning workers to support your business during busy periods, staff shortages, or special events.' : 'Professionelle midlertidige rengøringsarbejdere til at støtte din virksomhed i travle perioder, personalemangel eller særlige begivenheder.',
+    //   features: [
+    //     lang === 'en' ? 'Vetted professionals' : 'Godkendte fagfolk',
+    //     lang === 'en' ? 'Fast placement' : 'Hurtig placering',
+    //     lang === 'en' ? 'Flexible duration' : 'Fleksibel varighed'
+    //   ],
+    //   image: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg'
+    // }
   ];
 
   return (
@@ -886,7 +886,7 @@ export default function HomePage() {
                 <li><Link href="/services/piccoline-office-support" className="hover:text-[#10B981] transition">{t.services.piccoline.title}</Link></li>
                 <li><Link href="/services/staircase-cleaning" className="hover:text-[#10B981] transition">{t.services.staircase.title}</Link></li>
                 <li><Link href="/services/move-out-cleaning" className="hover:text-[#10B981] transition">{t.services.moveout.title}</Link></li>
-                <li><Link href="/services/temporary-staff" className="hover:text-[#10B981] transition">{lang === 'en' ? 'Temporary Cleaning Staff' : 'Midlertidig Rengøringspersonale'}</Link></li>
+                {/* Temporary Cleaning Staff hidden until launch. */}
               </ul>
             </div>
 

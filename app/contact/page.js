@@ -381,7 +381,8 @@ export default function ContactPage() {
     { key: 'piccoline', icon: Briefcase },
     { key: 'staircase', icon: Building2 },
     { key: 'moveout', icon: Sparkles },
-    { key: 'temporary', icon: Briefcase },
+    // Temporary Cleaning Staff is hidden until the service is ready to launch.
+    // { key: 'temporary', icon: Briefcase },
     { key: 'other', icon: MessageCircle }
   ];
 
@@ -833,7 +834,7 @@ export default function ContactPage() {
                 <li><Link href="/services/piccoline-office-support" className="hover:text-[#10B981] transition">Piccoline / Office Support</Link></li>
                 <li><Link href="/services/staircase-cleaning" className="hover:text-[#10B981] transition">Staircase Cleaning</Link></li>
                 <li><Link href="/services/move-out-cleaning" className="hover:text-[#10B981] transition">Move-out Cleaning</Link></li>
-                <li><Link href="/services/temporary-staff" className="hover:text-[#10B981] transition">Temporary Cleaning Staff</Link></li>
+                {/* Temporary Cleaning Staff hidden until launch. */}
               </ul>
             </div>
             

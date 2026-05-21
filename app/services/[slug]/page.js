@@ -34,7 +34,6 @@ import {
   Sparkles,
   Shield,
   Clock,
-  Users,
   Leaf,
   Calendar,
   Award,
@@ -656,7 +655,7 @@ export default function ServiceDetailPage() {
                 <li><Link href="/services/piccoline-office-support" className="hover:text-[#10B981] transition">Piccoline / Office Support</Link></li>
                 <li><Link href="/services/staircase-cleaning" className="hover:text-[#10B981] transition">Staircase Cleaning</Link></li>
                 <li><Link href="/services/move-out-cleaning" className="hover:text-[#10B981] transition">Move-out Cleaning</Link></li>
-                <li><Link href="/services/temporary-staff" className="hover:text-[#10B981] transition">Temporary Cleaning Staff</Link></li>
+                {/* Temporary Cleaning Staff hidden until launch. */}
               </ul>
             </div>
             
